@@ -9,8 +9,8 @@ const Footer = () => {
   return (
     <div  className=' w-full bg-blue-800 '>
     <div className=' max-w-[1000px] h-full py-10  mx-auto '>
-<div className='w-full flex justify-between '>
-    <div className='flex justify-between gap-5'>
+<div className=' w-full flex flex-col gap-4 px-4 sm:flex-row  sm:w-full sm:flex sm:justify-between '>
+    <div className='flex flex-col gap-3  sm:flex-row  sm:flex sm:justify-between sm:gap-5'>
         <div className='flex flex-col gap-5'>
             <div>
             <Image src={Logo}  height={200} width={200} alt='logo'/>
@@ -39,7 +39,7 @@ const Footer = () => {
           
            
         </div>
-        <div className='flex flex-col gap-5 items-center'>
+        <div className=' flex flex-col sm:flex sm:flex-col sm:gap-5 sm:items-center'>
            <h3 className=' text-2xl font-semibold text-white'>
 Quick Links
            </h3>
@@ -93,7 +93,7 @@ Kindness Stories
 
       
       </div>
-      <h3 className='py-12 text-gray-400 text-xl'>
+      <h3 className='py-12 text-gray-400 text-xl px-4'>
       Copyright © 2023 Random Acts. All rights reserved.
       </h3>
           

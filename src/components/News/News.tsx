@@ -17,16 +17,16 @@ const News = () => {
 
   return (
     <div className="w-full">
-      <div className="max-w-[1000px]  py-10 mx-auto">
+      <div className="w-full sm:max-w-[1000px]  sm:py-10 sm:mx-auto">
         <h3 className=" text-5xl py-4 text-blue-600 font-medium">News</h3>
-        <div className="flex justify-between gap-4 ">
+        <div className=" w-full flex flex-col justify-center items-center gap-4 py-4 sm:flex-row  sm:flex sm:justify-between sm:gap-4 ">
           {menu.slice(0, 3).map((e: MenuItem) => (
             <>
-              <Link
-                href="/"
-                className="w-[250px] min-h-[800px] flex flex-col justify-between rounded-lg bg-white border border-gray-200  hover:rounded-none"
-              >
-                <div className="w-[250px] min-h-[800px]">
+             <Link
+  href="/"
+  className=" min-h-[400px] w-[250px]  flex flex-col justify-between rounded-lg bg-white border border-gray-200 hover:rounded-none sm:w-full sm:min-h-auto"
+>
+                <div className="w-[250px] min-h-[400px] sm:w-[250px] sm:min-h-[800px]">
                 <div
                   className="relative"
                   style={{ height: "30%", width: "250px" }}
@@ -34,10 +34,9 @@ const News = () => {
                 >
                   <Image
                     src="https://images.unsplash.com/photo-1577223618563-3d858655ab86?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    fill
-                    className=" overflow-hidden rounded-lg hover:scale-130"
-                    sizes="(max-width:250px) 100vw"
-                    priority
+                    width={260}
+            height={16}
+            layout='responsive'
                     alt={e.title}
                   />
                   <h1 className="text-white absolute top-1 left-2 text-sm p-1 rounded-lg border border-gray-200">
@@ -80,7 +79,8 @@ const News = () => {
           ))}
           <iframe
             src="https://www.randomacts.org/"
-            style={{ maxHeight: "500px", width: "250px" }}
+          
+            className="w-full sm:w-[250px] sm:max-h-[800px]"
             title="Iframe Example"
           ></iframe>
         </div>

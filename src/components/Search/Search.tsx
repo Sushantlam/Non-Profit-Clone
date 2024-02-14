@@ -4,7 +4,7 @@ const Search = () => {
   return (
     <div  className=' w-full bg-green-800 h-48'>
     <div className=' max-w-[1000px] h-full py-10  mx-auto '>
-<div className='w-full '>
+<div className='w-full  '>
 
 
       <h3 className=' font-semibold text-white text-2xl'>Start your kindness journey here. </h3>

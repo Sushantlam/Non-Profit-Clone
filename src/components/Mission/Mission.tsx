@@ -4,8 +4,8 @@ import React from "react";
 const Mission = () => {
   return (
     <div className=" w-full ">
-      <div className=" max-w-[1000px] flex justify-between gap-10  my-5   mx-auto ">
-        <div className="w-[50%] min-h-[300px]  py-5">
+      <div className=" flex flex-col gap-5 sm:max-w-[1000px] sm:flex-row  sm:flex md:justify-between sm:gap-10  sm:my-5   sm:mx-auto ">
+        <div className="w-full px-4 sm:w-[50%] sm:min-h-[300px]  sm:py-5">
           <h3 className=" font-semibold text-center  text-2xl">Our mission</h3>
           <div className="flex justify-center">
             <hr
@@ -32,7 +32,7 @@ const Mission = () => {
           </p>
         </div>
 
-        <div style={{ backgroundColor: '#541637' }} className=" min-h-[300px] gap-5 px-5 flex flex-col justify-center items-center  w-[50%] h-full">
+        <div style={{ backgroundColor: '#541637' }} className=" w-full flex flex-col justify-center items-center gap-3 p-5  sm:min-h-[300px] sm:gap-5 sm:px-5 sm:flex sm:flex-col sm:justify-center sm:items-center  sm:w-[50%] sm:h-full">
           <h3 className="text-center text-white font-semibold text-2xl">Perform an Act of Kindness</h3>
           <p className="text-center text-white font-normal text-sm">
             We fund proposals for acts of kindness. If you have an awesome idea

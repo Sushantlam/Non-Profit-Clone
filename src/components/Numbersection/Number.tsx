@@ -26,7 +26,7 @@ const Number = () => {
   return (
     <div className=" w-full bg-red-100 min-h-[400px]">
       <div className=" max-w-[1000px] h-full py-10  mx-auto ">
-        <div className="w-full py-5 flex justify-between gap-3 items-center ">
+        <div className="w-full flex flex-col justify-center items-center gap-4 sm:flex-row   sm:w-full sm:py-5 sm:flex sm:justify-between sm:gap-3 sm:items-center ">
           <div className=" text-blue-500">
             <h3 className=" text-8xl ">596</h3>
             <p className=" text-3xl text-center">2023</p>
@@ -65,7 +65,7 @@ const Number = () => {
               <div
                 className={`bg-${
                   e.textBg
-                }-700 min-h-[120px] min-w-[100%] text-white text-center text-xl font-semibold  ${
+                }-700 min-h-[120px] min-w-[50%]  text-white text-center text-xl font-semibold  ${
                   index % 2 === 0 ? " rounded-bl-full " : "  rounded-br-full"
                 }`}
               >
