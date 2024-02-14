@@ -1,0 +1,7 @@
+#bord{
+    border-radius: 100px 100px 100px 0px;
+}
+
+#bord-2{
+    border-radius: 100px 100px 0px 100px;
+}
